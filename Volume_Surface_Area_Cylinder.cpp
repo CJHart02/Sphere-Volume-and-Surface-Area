@@ -17,6 +17,6 @@ int main()
   cin >> height;
   double volume = pi * (radius * radius) * height;
   double surface = (2.0 * pi * radius * height) + ( 2.0 * pi * (radius * radius)); 
-  cout << " When the radius of a cylinder is " << radius << " inches and its height is " << height << " inches, the volume is " << volume << " cubic inches and the surface area is " << surface << " cubic inches." << endl;
+  cout << " When the radius of a cylinder is " << radius << " inches and its height is " << height << " inches, the volume is " << volume << " cubic inches and the surface area is " << surface << " square inches." << endl;
   return 0;
 }
