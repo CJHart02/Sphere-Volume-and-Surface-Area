@@ -1,7 +1,7 @@
 // program 1 Carlton Hart cjhart
 // calc vol and surface of cyl
 // due 2-5-2016
-//ayy lmao
+// ayy lmao
 
 #include <iostream>
 
@@ -16,21 +16,29 @@ double surface;
 
 int main()
 {
-  cout << " This program will allow you to calculate the volume and surface area of a cylinder. " << endl; // Tells the user what the program is meant to do.
+  // Tells the user what the program is meant to do.
+  cout << " This program will allow you to calculate the volume and surface area of a cylinder. " << endl;
+  cout << endl;
   
+  // Creates an input string for the debug
   string input;
   
-  for ( ;; )
-  {
   
+  for ( ;; )
+  { //start of the for loop
+ 
+  //Input data if necessary 
   cout << "Please enter the radius: " << endl;
   cin >> radius;
   cout << " Please enter the height: ";
   cin >> height;
-  cout << " So the radius is " << radius << " inches and the height is " << height << " inches, correct? (y/n): " << endl;
+ 
+ // Debug line
+  cout << " So the radius is " << radius << " inches and the height is " << height << " inches, correct? (yes/no): " << endl;
     cin >> input;
-      if(input == "y")
+      if(input == "yes") //If the user doesn't answer "yes," they will have to reenter the correct measurments. 
         {
+      cout << endl;
       break;
         }
       else
@@ -39,8 +47,9 @@ int main()
         cout << endl;
         continue;
         }
-  }
+  } //end of the for loop
   
+  //Calculations
   double volume = pi * (radius * radius) * height;
   double surface = (2.0 * pi * radius * height) + ( 2.0 * pi * (radius * radius)); 
   cout << " A cylinder with a radius of " << radius << " inches and a height of " << height << " inches has a volume of " << volume << " cubic inches and a surface area of " << surface << " square inches. " << endl;
