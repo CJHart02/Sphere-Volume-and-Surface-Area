@@ -54,6 +54,6 @@ int main()
 	double volume = pi * (radius * radius) * height;
 	
 	// gives last debug and outputs the answers
-	cout << " A cylinder with a radius of " << radius << " inches and a height of " << height << " inches has a volume of " << volume << " cubic inches. " << endl;
+	cout << " A cylinder with a radius of " << radius << " inches and a height of " << height << " inches has a volume of " << volume << " cubic inches. " << endl << " The volume can be found by plugging in the radius and height into the formula: pi * (radius * radius) * height. " << endl;
 	return 0;
 }
